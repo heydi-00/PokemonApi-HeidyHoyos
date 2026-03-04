@@ -1,13 +1,82 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>pokeapi-app</title>
+    <title>PokéDex — Descubre tu mundo</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div id="app"></div>
+
+    <header>
+      <div class="logo">Poké<span>DEX</span></div>
+      <p class="subtitle">Descubre todos los Pokémon del mundo</p>
+    </header>
+
+    <div class="search-wrap">
+      <div class="search-box">
+        <svg width="16" height="16" fill="none" viewBox="0 0 24 24"
+             stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"/>
+          <path d="m21 21-4.35-4.35"/>
+        </svg>
+        <input
+          id="searchInput"
+          type="text"
+          placeholder="Busca un Pokémon para descubrirlo…"
+          autocomplete="off"
+        />
+      </div>
+      <button id="searchBtn">Descubrir</button>
+    </div>
+
+    <div class="stats-bar">
+      <span>Total: <b id="totalCount">0</b></span>
+      <span class="discovered-label">
+        ✦ Descubiertos: <b id="discoveredCount">0</b>
+      </span>
+    </div>
+
+    <div id="loader">
+      <div class="pokeball-spin"></div>
+      <span>Cargando Pokémon…</span>
+    </div>
+
+    <div id="grid"></div>
+
+    <div id="loadMoreWrap" style="display:none">
+      <button id="loadMoreBtn">Cargar más</button>
+    </div>
+
+    <div id="modal-overlay">
+      <div id="modal">
+        <button id="modalClose" class="modal-close">✕</button>
+
+        <div class="modal-header">
+          <img id="modalImg" class="modal-img" src="" alt="" />
+          <div class="modal-meta">
+            <div id="modalId"   class="modal-id"></div>
+            <div id="modalName" class="modal-name"></div>
+            <div id="modalTypes" class="types"></div>
+            <div class="modal-measures">
+              <span>📏 <b id="modalHeight"></b></span>
+              <span>⚖️ <b id="modalWeight"></b></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-body">
+          <p id="modalDesc" class="modal-desc"></p>
+          <div id="modalStats"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="toast"></div>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
