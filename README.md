@@ -88,4 +88,3 @@ Durante el desarrollo de este proyecto practiqué:
 # 👩‍💻 Autor
 
 Heidy Hoyos
-Desarrolladora Junior en formación
