@@ -7,6 +7,7 @@ Aplicación web desarrollada consumiendo una API REST de Pokémon para visualiza
 # 📌 Descripción
 
 Este proyecto fue desarrollado con el objetivo de practicar el consumo de APIs, manejo de datos dinámicos y renderizado de información en aplicaciones web utilizando JavaScript.
+
 La aplicación obtiene información directamente desde una API externa y muestra datos relevantes de los Pokémon de forma interactiva.
 
 ---
@@ -41,31 +42,38 @@ La aplicación obtiene información directamente desde una API externa y muestra
 ---
 
 # 📂 Estructura del proyecto
+
+```bash
 PokemonApi-HeidyHoyos/
 │
 ├── index.html
 ├── style.css
 ├── script.js
 └── assets/
+```
 
 ---
 
 # ⚙️ Cómo ejecutar el proyecto
 
 ## 1. Clonar repositorio
+
 ```bash
 git clone https://github.com/heydi-00/PokemonApi-HeidyHoyos.git
 ```
 
 ## 2. Abrir el proyecto
+
 Abrir la carpeta en Visual Studio Code.
 
 ## 3. Ejecutar proyecto
+
 Usar la extensión Live Server para visualizar la aplicación en el navegador.
 
 ---
 
 # 📚 Aprendizajes obtenidos
+
 Durante el desarrollo de este proyecto practiqué:
 
 * Consumo de APIs externas
@@ -78,4 +86,6 @@ Durante el desarrollo de este proyecto practiqué:
 ---
 
 # 👩‍💻 Autor
+
 Heidy Hoyos
+Desarrolladora Junior en formación
